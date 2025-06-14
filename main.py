@@ -8,7 +8,7 @@ st.markdown("Upload an image and get an AI-generated caption using **Google Gemi
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
+    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
 
     if st.button("Generate Caption"):
         with st.spinner("Generating caption..."):
